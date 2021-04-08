@@ -4,7 +4,7 @@
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## The Request/Response Cycle of the Web
-![Request/Response Cycle of the Web Diagram](https://jamboard.google.com/d/106gWVMlGaOGwDd6x043f4dzEqqDf6PvutUE6iu_nROM/edit?usp=sharing)
+![Request/Response Cycle of the Web Diagram](/img/web_cycle.png)
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
