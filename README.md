@@ -19,8 +19,11 @@ To run this app we will need to use LocationIQ API key in a `.env` file to run t
 ## Architecture
 
 [React](https://reactjs.org/)
+
 [React-Bootstrap](https://react-bootstrap.github.io/)
+
 [Axios](https://www.npmjs.com/package/axios)
+
 [LocationIQ](https://locationiq.com/)
 
 We are using React language to build the app. React-bootstrap for styling, Axios for requesting from the API LocationIQ.
