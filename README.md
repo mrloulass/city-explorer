@@ -44,15 +44,15 @@ We are using React language to build the app. React-bootstrap for styling, Axios
 
 # Time Estimates
 
-Name of feature: 
+Name of feature: Build Form, use data from LocationIQ and use Bootstrap Component to display data
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 3 hrs
 
-Start time: 
+Start time: 8:00
 
-Finish time: 
+Finish time: 10:00
 
-Actual time needed to complete:
+Actual time needed to complete: 2 days
 
 # Time Estimates
 
