@@ -44,7 +44,7 @@ We are using React language to build the app. React-bootstrap for styling, Axios
 
 # Time Estimates
 
-Name of feature: Build Form, use data from LocationIQ and use Bootstrap Component to display data
+Name of feature 1: Build Form, use data from LocationIQ and use Bootstrap Component to display data
 
 Estimate of time needed to complete: 3 hrs
 
@@ -56,19 +56,19 @@ Actual time needed to complete: 2 days
 
 # Time Estimates
 
-Name of feature: 
+Name of feature 2: Add a staticmap with LOCATIONIQ and Style the elements
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1 hr
 
-Start time: 
+Start time: 8
 
-Finish time: 
+Finish time: 9
 
-Actual time needed to complete:
+Actual time needed to complete: 1 hr
 
 # Time Estimates
 
-Name of feature: 
+Name of feature 3: 
 
 Estimate of time needed to complete: 
 
