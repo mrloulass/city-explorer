@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Alert from 'react-bootstrap/Alert';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,19 +14,25 @@ class App extends React.Component {
 
     this.state = {
       city: '',
-      dataFromCity: {}
+      dataFromCity: {},
     };
   }
 
   submitForm = async (e) => {
     e.preventDefault();
     // console.log(this.state.city);
-    let dataFromCity = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${this.state.city}&format=json`);
-    // console.log(dataFromCity);
-    let firstCityData = dataFromCity.data[0];
-    this.setState({
-      dataFromCity: firstCityData
-    })
+    try {
+      let dataFromCity = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${this.state.city}&format=json`);
+      // console.log(dataFromCity);
+      let firstCityData = dataFromCity.data[0];
+      this.setState({
+        dataFromCity: firstCityData
+      });
+    } catch (error) {
+
+      // console.log(error);
+      this.setState({ error: error.message });
+    }
   }
 
   render() {
@@ -40,6 +47,10 @@ class App extends React.Component {
               <Button variant="info" type="submit">Explore!</Button>
             </Form.Group>
           </Form>
+          {this.state.error ?
+            <Alert variant ="danger">
+              <Alert.Heading>Error Message: {this.state.error}</Alert.Heading>
+            </Alert> : ''}
           {this.state.dataFromCity.lat !== undefined ? <Card bg="light" border="warning">
             <Card.Body>
               <Card.Title>{this.state.dataFromCity.display_name}</Card.Title>
