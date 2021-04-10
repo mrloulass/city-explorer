@@ -1,3 +1,19 @@
 div{
   text-align: center;
 }
+
+h1{
+  margin-top: 25px;
+}
+
+Button{
+margin-top: 10px;
+
+}
+
+Form{
+  background-color: rgba(220, 220, 220, 0.513);
+  padding: 10px;
+  border-radius: 15px;
+}
+
