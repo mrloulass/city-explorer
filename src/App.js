@@ -26,10 +26,8 @@ class App extends React.Component {
 
   submitForm = async (e) => {
     e.preventDefault();
-    // console.log(this.state.city);
     try {
       let dataFromCity = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${this.state.city}&format=json`);
-      // console.log(dataFromCity);
       let firstCityData = dataFromCity.data[0];
       this.setState({
         dataFromCity: firstCityData,
@@ -39,8 +37,6 @@ class App extends React.Component {
       this.getWeatherdata();
       this.getMovieData();
     } catch (error) {
-
-      // console.log(error);
       this.setState({ error: error.message });
     }
   }
@@ -52,9 +48,7 @@ class App extends React.Component {
           lat: this.state.lat,
           lon: this.state.lon
         }
-
       });
-      console.log(weatherData.data);
       this.setState({
         weatherData: weatherData.data,
       });
@@ -67,11 +61,9 @@ class App extends React.Component {
     try {
       const movieData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`, {
         params: {
-          lat: this.state.lat,
-          lon: this.state.lon
+          city: this.state.city,
         }
       });
-      console.log(movieData.data);
       this.setState({
         movieData: movieData.data,
       });
@@ -106,7 +98,7 @@ class App extends React.Component {
                 </Card.Body>
               </Card>
               <Weather weatherData={this.state.weatherData} />
-              <Movies movieData={this.state.movieData}/>
+              <Movies movieData={this.state.movieData} />
             </>
             : ''}
         </Container>
