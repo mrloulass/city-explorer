@@ -143,7 +143,7 @@ Actual time needed to complete: 2hrs
 
 ## The Request/Response Cycle of the Web
 
-![Request/Response Cycle of the Web Diagram](/images/wrrc2.png)
+![Request/Response Cycle of the Web Diagram](/img/wrrc2.png)
 
 ## Overview
 Requesting data from my server to get data from third API Weatherbit and Themoviedb. Then render data to frontend.
@@ -185,6 +185,7 @@ Requesting data from my server to get data from third API Weatherbit and Themovi
 - Lecture and Instruction with Michelle Ferreirae and Ryan Gallaway
 
 - Assists from Joe Pennock 
+
 # Time Estimates
 
 Name of feature: Adding data from third party
@@ -196,3 +197,83 @@ Start time: 6:00
 Finish time: 7:00
 
 Actual time needed to complete: 4 days
+
+# city-explorer-api
+
+# Project Name: City Explorer Lab-09
+
+**Author**: Louis Lassegue
+
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+## The Request/Response Cycle of the Web
+
+![Request/Response Cycle of the Web Diagram](/img/WRRC3.png)
+
+## Overview
+
+Refactor: Componentize the front-end codebase.
+
+## Getting Started
+
+1. Within your Weather component, create a nested component, `WeatherDay`, to render a single day's forecast. Map over the result to convert the raw response data into an array of these components.
+
+2. Within your `Movies` component, create a nested `Movie` component for rendering of each individual movie object found in the raw response data.
+
+3. Review the rest of your codebase. Further componentize any other aspects of the UI, as appropriate.
+
+4. Deploy your changes to website.
+
+## Architecture
+
+[React](https://reactjs.org/)
+
+[React-Bootstrap](https://react-bootstrap.github.io/)
+
+[Axios](https://www.npmjs.com/package/axios)
+
+[LocationIQ](https://locationiq.com/)
+
+We are using React language to build the app. React-bootstrap for styling, Axios for requesting from the API LocationIQ.
+
+[Node JS](https://nodejs.org/en/):As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+
+[NPM JS](https://docs.npmjs.com/):Use to help share and borrow packages.
+
+[Express JS](http://expressjs.com/en/4x/api.html): A web frameork for Node.js
+
+[NPM JS package:dotenv](https://www.npmjs.com/package/dotenv): Storing configuration in the environment separate from the code base.
+
+[NPM JS package:cors](https://expressjs.com/en/resources/middleware/cors.html):Allow REACT app forntend to access data form server
+
+[NPM JS package:axios](https://www.npmjs.com/package/react-axios):This is intended to allow in render async requests.
+
+[Heroku](https://www.heroku.com/home): Used to up load server app.
+
+[Trello:project board](https://trello.com/en-US):Help manage projects.
+
+[SuperAgent](https://visionmedia.github.io/superagent/#test-documentation): to help request data from third party APIs and resposne back to frontend client
+
+## Change Log
+
+04-21-2001 7:00pm - Refactor: code
+
+## Credit and Collaborations
+
+- Lecture and Instruction with Michelle Ferreirae and Ryan Gallaway
+
+- Worked with Qadree Trimble to draw out WRRC image.
+
+- Tom McGuire help with image_path to add images to websites
+
+# Time Estimates
+
+Name of feature: Refactor: Modularize the front-end codebase
+
+Estimate of time needed to complete: 2 hrs
+
+Start time: 7:00
+
+Finish time: 
+
+Actual time needed to complete: 
